@@ -1,0 +1,67 @@
+body{
+    margin: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:lavenderblush;
+}
+
+h1{
+    font-size: 4em;
+    margin: 1em;
+    margin-bottom: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    padding-right: 1em;
+    color: dodgerblue;
+}
+
+.bold{
+
+    font-size: larger;
+    font-weight: bold;
+}
+
+#header{
+    
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    padding: 1em;
+    
+    
+}
+
+#footer{
+   
+    
+    border-top-style: solid;
+    padding: 1em;
+   
+}
+
+#SignIn{
+    
+    text-align: end;
+    
+    
+}
+
+#ProjectName{
+
+    text-align: left;
+    
+    
+}
+
+#FirstFeature{
+
+   text-align: right;
+
+}
+
+.container{
+    
+    padding: 1em;
+}
