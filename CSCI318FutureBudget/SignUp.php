@@ -12,44 +12,69 @@
         include('header.php');
     ?>
 </head>
-
-<?php
-    if(isset($_POST['create']))
-        echo 'User Submitted.';
-    ?>
-
 <body>
     <div id = "register">
-        <form action="SignUp.php" method="post">
             <div class= "container">
-                <h1>Sign Up</h1>
+                
+                <h1>Register Here!</h1>
                 <h2>Fill in the following fields</h2>
-                <label for="firstname">First Name</label>
-                <input type="text" id = "firstname" required>
 
-                <label for="lastname">Last Name</label>
-                <input type="text" id = "lastname" required>
-
-                <label for="email">Email Address</label>
-                <input type="email" id = "email" required>
-
-                <label for="password">Password</label>
-                <input type="password" id = "password" required>
-
+                <form id = "signup-form">
+                <input type="email" id = "email" placeholder= "Email">
+                <input type="password" id = "password" placeholder= "Password">
                <!-- CALL REGISTER FUNCTION FROM D3GRAPHS.DBCONFIG.JS TO
                 SIGN UP
-               -->
+               
 
-                <input type="submit" name = "create" value = "Sign Up">
+                <input type="button" onclick name = "create" value = "Sign Up">
+                -->
 
+                <button> Sign Up </button>
+                </form>
                 
 
             </div>
-        </form>
+        
     </div>
+
+    <!--   <script src = 'https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js' type="module">
+
+        import { initializeApp }  from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js'
+
+        const firebaseConfig = {
+    apiKey: "AIzaSyBJX_GYDQCrgoaf-FY9QggyraBpKByMRSA",
+    authDomain: "future-budget.firebaseapp.com",
+    databaseURL: "https://future-budget-default-rtdb.firebaseio.com",
+    projectId: "future-budget",
+    storageBucket: "future-budget.appspot.com",
+    messagingSenderId: "260927317344",
+    appId: "1:260927317344:web:02adf1475a715595bb2a05"
+  };
+  
+  
+initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+
+    
+    </script>
+ -->
+
+
+
+<script src = "../AuthConfig.js" type="module" ></script>
+
 </body>
+
+  <!-- <script src ='https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js'> </script> -->
+
+
 
 <?php
         include('footer.php');
+
+        
     ?>
+
+
 </html>
