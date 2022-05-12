@@ -33,7 +33,7 @@ signInWithEmailAndPassword(auth, email, password)
   .then(cred => {
     // Signed in 
   
-      window.open('http://localhost:81/FUTUREBUDGETPROJECT/CSCI318FutureBudget/AboutUs.php')
+    window.open("AccountPage.php");
     // ...
   })
   .catch((error) => {

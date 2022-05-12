@@ -1,5 +1,5 @@
 import { initializeApp }  from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js'
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js'
+import { getAuth, createUserWithEmailAndPassword} from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js'
 //import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 //import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -20,7 +20,6 @@ const auth = getAuth(app);
 
 // app.use("/config", express.static('./config/'));
 const signUpForm = document.querySelector('#signup-form');
-const logInForm = document.querySelector('#login-form');
   
 signUpForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -34,7 +33,7 @@ signUpForm.addEventListener('submit', (e) => {
   .then(cred => {
     // Signed in 
   
-      window.open('http://localhost:81/FUTUREBUDGETPROJECT/CSCI318FutureBudget/index.php')
+      window.open('index.php')
     // ...
   })
   .catch((error) => {

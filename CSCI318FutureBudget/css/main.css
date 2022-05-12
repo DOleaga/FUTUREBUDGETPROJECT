@@ -1,0 +1,241 @@
+﻿body
+{
+    font-family: "微软雅黑";
+    color: #676a6c;
+    *font-size: 0;
+}
+html,
+body
+{
+    height: 100%;
+}
+/*head*/
+
+.inner{width:1200px;margin:0 auto;}
+#header{
+	background: #fff;
+	border-bottom: 1px solid #e6e6e6;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	padding: 20px 0;
+}
+#plogin #header{padding-bottom:40px;}
+#plogin .logo{margin-top: 20px;}
+.panel-navbar{
+	line-height: 42px;
+	margin-top: 10px;
+}
+.panel-navbar a{
+    margin-left: 15px;
+    border-left: 1px solid #d8d8d8;
+    padding-left: 20px;color: #888;
+}
+.panel-navbar a:hover{
+	color: #2e82ff;
+	text-decoration: none;
+}
+
+/*end*/
+#footer{
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    padding: 30px;
+    border-top: 1px solid #e6e6e6;
+}
+.copyright{}
+
+/*uniform style*/
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary.focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open > .dropdown-toggle.btn-primary{
+    background-color: #1975ff;
+    border-color: #015fec;
+}
+.form-horizontal .form-group{margin: 0 0 15px;}
+.form-horizontal .control-label{text-align: left;text-align: left\9 !important;font-size: 14px;font-weight: normal;}
+.login-form .form-horizontal .control-label{padding-left: 0;color: #0066ff;}
+.rows-forget{
+    text-align: right;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.alert-label{
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #ff4a4a;
+    background: #ffe0de;
+    margin-top: 15px;
+}
+.slogon{
+    font-size: 12px;
+    text-align: center;
+    color: #ababab;
+    margin-top: 20px;
+}
+.hr-line-dashed {
+    height: 1px;
+    margin: 20px 0;
+    color: #fff;
+    /*border-top: 1px dashed #e7eaec;*/
+    background-color: #fff;
+    border-top: 1px dotted #dbdcdc;
+}
+
+/*Login*/
+#main{}
+.container{
+	height: 400px;
+	width: 900px;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 530px 400px;
+}
+.banner-slider{
+	float: right;
+	width: 350px;
+}
+h1{
+	text-align: center;
+}
+#main .inner{position: relative;}
+
+.banner-box a{
+    display: block;
+    width: 700px;
+    height: 100%;
+}
+.inner-rel{
+	background: #fff;
+    box-shadow: 0 0px 20px rgba(59, 59, 68, 0.25);
+    border: 1px solid #ddd\9;
+    height: 400px;
+    width: 360px;
+}
+.form-box{
+    width: 300px;
+    margin: 0 auto;
+}
+.form-title{
+    font-size: 18px;
+    color: #06f;
+    margin-bottom: 20px;
+}
+#plogin .form-title{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.form-title small{
+    color: #999;
+    font-size: 66%;
+}
+.btn-login{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/*register*/
+.container-register{
+	width:500px;
+	margin: 0 auto;
+	background: #fff;
+    box-shadow: 0 0px 20px rgba(59, 59, 68, 0.25);
+    border: 1px solid #ddd\9;
+    height: 700px;
+}
+.form-box2{
+    width: 400px;
+    margin: 0 auto;
+}
+.register-form .form-control{
+    height: 40px;
+    padding: 10px 12px;
+    box-shadow: none;
+    border-radius: 0;
+}
+.code-mode{font-size: 0;}
+.validform-box
+{
+    font-size: 18px;
+    /*position: absolute;
+    top: 11px;
+    left: 286px;*/
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+}
+.btn-register{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.has-feedback
+{
+    position: relative;
+}
+.form-control-feedback
+{
+    line-height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    pointer-events: none;
+}
+.has-feedback .form-control
+{
+    padding-right: 42.5px;
+    *width:86%;
+}
+.has-error .form-control
+{
+    border-color: #ed5565;
+}
+.has-error .form-control:focus {
+    border-color: #ed5a69;
+}
+.has-error .form-control-feedback,
+.has-error .validform-box label
+{
+    color: #ed5565;
+}
+.has-success .form-control
+{
+    border-color: #06f;
+}
+.has-success .form-control:focus {
+    border-color: #2e82ff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #2e82ff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #2e82ff;
+}
+.has-success .form-control-feedback
+{
+    color: #06f;
+}
+.has-success .validform-box{
+    display: none;
+}
+/*
+#term .container{width: auto;}
+.box-result{text-align: center;overflow: auto;padding: 50px 0;border: 0;}
+.result-icon{font-size: 78px;margin-top: 0;}
+.result-icon i{color: #2e82ff;}
+.result-title{font-size: 28px;font-weight: bold;color: #2e82ff;}
+.result-info{    color: #969b9e;
+    margin-top: 20px;
+    line-height: 1.8;
+    text-indent: 28px;
+    font-size: 14px;
+    padding: 0 20px;}
+.result-info a{}
+.result-btn{margin:30px auto 0;width:80%;}*/
